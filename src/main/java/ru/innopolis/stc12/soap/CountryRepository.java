@@ -2,11 +2,13 @@ package ru.innopolis.stc12.soap;
 
 import io.spring.guides.gs_producing_web_service.Country;
 import io.spring.guides.gs_producing_web_service.Currency;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class CountryRepository {
     private static final Map<String, Country> countries = new HashMap<>();
 
